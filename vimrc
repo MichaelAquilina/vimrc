@@ -10,8 +10,7 @@ call vundle#begin()
 Bundle 'gmarik/Vundle.vim'
 
 Bundle "tomasr/molokai"
-Bundle "L9"
-Bundle "FuzzyFinder"
+Bundle "ctrlpvim/ctrlp.vim"
 
 call vundle#end()
 filetype plugin indent on    " required!
