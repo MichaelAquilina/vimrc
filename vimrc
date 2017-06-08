@@ -38,3 +38,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 set hlsearch
 "Highlight matching parenthesis
 set showmatch
+
+" Enable mouse support
+set mouse=a
