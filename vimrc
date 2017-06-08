@@ -20,7 +20,6 @@ colorscheme molokai
 let mapleader=" "
 
 map <leader>s :source ~/.vimrc<CR>
-map <leader>p :FufCoverageFile|
 
 set hidden
 set history=100
