@@ -1,4 +1,4 @@
-filetype on
+filetype off
 syntax enable
 set number
 
