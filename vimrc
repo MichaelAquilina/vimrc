@@ -12,6 +12,7 @@ Bundle 'gmarik/Vundle.vim'
 
 Bundle "airblade/vim-gitgutter"
 Bundle "vim-airline/vim-airline"
+Bundle "vim-airline/vim-airline-themes"
 Bundle "davidhalter/jedi-vim"
 Bundle "tomasr/molokai"
 Bundle "joshdick/onedark.vim"
