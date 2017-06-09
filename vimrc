@@ -52,3 +52,6 @@ set showmatch
 set mouse=a
 
 set wildignore+=*.py[co]
+
+set laststatus=2
+let g:airline_powerline_fonts = 1
