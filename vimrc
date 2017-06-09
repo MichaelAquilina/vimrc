@@ -10,12 +10,13 @@ call vundle#begin()
 Bundle 'gmarik/Vundle.vim'
 
 Bundle "tomasr/molokai"
+Bundle "joshdick/onedark.vim"
 Bundle "ctrlpvim/ctrlp.vim"
 
 call vundle#end()
 filetype plugin indent on    " required!
 
-colorscheme molokai
+colorscheme onedark
 
 let mapleader=" "
 
