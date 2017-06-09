@@ -54,13 +54,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 set wildignore+=*.py[co],*/\.git/*
 
-if executable("rg")
-    let g:ackprg = 'rg --vimgrep --no-heading --smart-case'
-else
-    let g:ackprg = 'ag --vimgrep --smart-case'
-endif
-
+" ripgrep is much faster. Use it if its available
 if executable('rg')
+  let g:ackprg = 'rg --vimgrep --no-heading --smart-case'
   set grepprg="rg --nogroup --nocolor"
   " Use rg in CtrlP for listing files. Lightning fast and respects .gitignore
 	let g:ctrlp_user_command = 'rg %s --vimgrep -l --files --smart-case'
