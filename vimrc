@@ -11,6 +11,7 @@ call vundle#begin()
 Bundle 'gmarik/Vundle.vim'
 
 Bundle "airblade/vim-gitgutter"
+Bundle "tpope/vim-fugitive"
 Bundle "vim-airline/vim-airline"
 Bundle "vim-airline/vim-airline-themes"
 Bundle "davidhalter/jedi-vim"
