@@ -44,4 +44,4 @@ set showmatch
 " Enable mouse support
 set mouse=a
 
-set wildignore+=*.pyc
+set wildignore+=*.py[co]
