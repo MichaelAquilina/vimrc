@@ -16,6 +16,7 @@ Bundle 'gmarik/Vundle.vim'
 
 Bundle "airblade/vim-gitgutter"
 Bundle "tpope/vim-fugitive"
+Bundle "mileszs/ack.vim"
 
 Bundle "vim-airline/vim-airline"
 Bundle "vim-airline/vim-airline-themes"
