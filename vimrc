@@ -2,6 +2,10 @@ filetype off
 syntax enable
 set number
 set nocompatible
+set laststatus=2
+set mouse=a
+set hlsearch
+set showmatch
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -12,8 +16,11 @@ Bundle 'gmarik/Vundle.vim'
 
 Bundle "airblade/vim-gitgutter"
 Bundle "tpope/vim-fugitive"
+
 Bundle "vim-airline/vim-airline"
 Bundle "vim-airline/vim-airline-themes"
+let g:airline_powerline_fonts = 1
+
 Bundle "davidhalter/jedi-vim"
 Bundle "tomasr/molokai"
 Bundle "joshdick/onedark.vim"
@@ -26,6 +33,7 @@ colorscheme onedark
 
 let mapleader=" "
 
+" Custom command shortcuts
 map <leader>s :source ~/.vimrc<CR>
 
 set t_Co=256  " Explicitly tell Vim that the terminal supports 256 colors
@@ -44,15 +52,5 @@ set shiftwidth=4
 "Remove extra whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-"Enable highlighting of search results
-set hlsearch
-"Highlight matching parenthesis
-set showmatch
-
-" Enable mouse support
-set mouse=a
-
 set wildignore+=*.py[co]
 
-set laststatus=2
-let g:airline_powerline_fonts = 1
