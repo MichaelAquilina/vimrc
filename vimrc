@@ -45,10 +45,11 @@ set history=100
 
 filetype indent on
 set nowrap
-set smartindent
 set autoindent
-set tabstop=2
+set expandtab
+set tabstop=4
 set shiftwidth=4
+set listchars=tab:>-
 
 "Remove extra whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e
