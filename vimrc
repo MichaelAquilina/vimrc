@@ -9,6 +9,7 @@ call vundle#begin()
 " required!
 Bundle 'gmarik/Vundle.vim'
 
+Bundle "davidhalter/jedi-vim"
 Bundle "tomasr/molokai"
 Bundle "joshdick/onedark.vim"
 Bundle "ctrlpvim/ctrlp.vim"
