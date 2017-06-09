@@ -63,3 +63,9 @@ if executable('rg')
   " Use rg in CtrlP for listing files. Lightning fast
   let g:ctrlp_user_command = "rg %s -g --vimgrep --files --smart-case"
 endif
+
+if &term =~ '256color'
+  " Disable Background Color Erase (BCE) so that color schemes
+  " work properly when Vim is used inside tmux and GNU screen.
+  set t_ut=
+endif
