@@ -26,6 +26,9 @@ let mapleader=" "
 
 map <leader>s :source ~/.vimrc<CR>
 
+set t_Co=256  " Explicitly tell Vim that the terminal supports 256 colors
+set encoding=utf-8
+
 set hidden
 set history=100
 
