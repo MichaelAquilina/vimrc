@@ -10,6 +10,8 @@ call vundle#begin()
 " required!
 Bundle 'gmarik/Vundle.vim'
 
+Bundle "airblade/vim-gitgutter"
+Bundle "vim-airline/vim-airline"
 Bundle "davidhalter/jedi-vim"
 Bundle "tomasr/molokai"
 Bundle "joshdick/onedark.vim"
