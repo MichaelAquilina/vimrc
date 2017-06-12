@@ -30,6 +30,9 @@ Bundle "tomasr/molokai"
 Bundle "joshdick/onedark.vim"
 Bundle "ctrlpvim/ctrlp.vim"
 Bundle "ervandew/supertab"
+Bundle "vim-syntastic/syntastic"
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_always_populate_loc_list = 1
 
 call vundle#end()
 filetype plugin indent on    " required!
@@ -47,6 +50,8 @@ nnoremap _ ddkP
 " Uppercasing shortcuts
 nnoremap <c-u> veU<esc>
 inoremap <c-u> <esc>lveU<esc>i
+
+nnoremap <leader>e :Errors<cr>
 
 set t_Co=256  " Explicitly tell Vim that the terminal supports 256 colors
 set encoding=utf-8
