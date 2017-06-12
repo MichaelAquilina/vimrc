@@ -8,6 +8,7 @@ set hlsearch
 set incsearch
 set showmatch
 set autoread
+set noswapfile
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
