@@ -27,6 +27,7 @@ Bundle "davidhalter/jedi-vim"
 Bundle "tomasr/molokai"
 Bundle "joshdick/onedark.vim"
 Bundle "ctrlpvim/ctrlp.vim"
+Bundle "ervandew/supertab"
 
 call vundle#end()
 filetype plugin indent on    " required!
