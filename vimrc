@@ -60,7 +60,10 @@ set autoindent
 set expandtab
 set tabstop=4
 set shiftwidth=4
-set listchars=tab:>-
+
+" Show whitespace characters
+set listchars=eol:¬,tab:>-,trail:~,extends:>,precedes:<,space:.
+set list
 
 "Remove extra whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e
