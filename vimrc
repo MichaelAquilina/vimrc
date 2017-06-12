@@ -39,7 +39,8 @@ colorscheme onedark
 let mapleader=" "
 
 " Custom command shortcuts
-map <leader>s :source ~/.vimrc<CR>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap - ddp
 nnoremap _ ddkP
 
