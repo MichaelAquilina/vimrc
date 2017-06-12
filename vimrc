@@ -41,6 +41,10 @@ map <leader>s :source ~/.vimrc<CR>
 nmap - ddp
 nmap _ ddkP
 
+" Uppercasing shortcuts
+nmap <c-u> veU<esc>
+imap <c-u> <esc>lveU<esc>i
+
 set t_Co=256  " Explicitly tell Vim that the terminal supports 256 colors
 set encoding=utf-8
 
