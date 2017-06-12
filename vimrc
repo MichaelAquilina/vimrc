@@ -65,14 +65,14 @@ set listchars=tab:>-
 "Remove extra whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-set wildignore+=*.py[co],*/\.git/*
-
 " ripgrep is much faster. Use it if its available
 if executable('rg')
-  let g:ackprg = "rg --vimgrep --no-heading --smart-case"
-  set grepprg="rg --vimgrep --no-heading --smart-case"
+  let g:ackprg = "rg --vimgrep --smart-case"
+  set grepprg="rg --vimgrep --smart-case"
   " Use rg in CtrlP for listing files. Lightning fast
-  let g:ctrlp_user_command = "rg %s -g --vimgrep --files --smart-case"
+  let g:ctrlp_user_command = "rg %s --color=never --files -g ''"
+  " ripgrep is fast enough not to need caching
+  let g:ctrlp_use_caching = 0
 endif
 
 if &term =~ '256color'
