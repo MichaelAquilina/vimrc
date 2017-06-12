@@ -38,6 +38,8 @@ let mapleader=" "
 
 " Custom command shortcuts
 map <leader>s :source ~/.vimrc<CR>
+nmap - ddp
+nmap _ ddkP
 
 set t_Co=256  " Explicitly tell Vim that the terminal supports 256 colors
 set encoding=utf-8
