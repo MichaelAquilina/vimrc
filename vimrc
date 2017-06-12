@@ -5,6 +5,7 @@ set nocompatible
 set laststatus=2
 set mouse=a
 set hlsearch
+set incsearch
 set showmatch
 set autoread
 
