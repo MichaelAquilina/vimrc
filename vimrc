@@ -6,6 +6,7 @@ set laststatus=2
 set mouse=a
 set hlsearch
 set showmatch
+set autoread
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
