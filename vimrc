@@ -72,8 +72,10 @@ set shiftwidth=4
 set listchars=eol:¬,tab:>-,trail:~,extends:>,precedes:<,space:.
 set list
 
-"Remove extra whitespaces on save
+" Remove extra whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e
+" Automatically save changes when focus is lost
+autocmd FocusLost * :wa
 
 " ripgrep is much faster. Use it if its available
 if executable('rg')
