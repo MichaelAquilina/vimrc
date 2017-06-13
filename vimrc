@@ -26,6 +26,8 @@ Bundle "vim-airline/vim-airline-themes"
 let g:airline_powerline_fonts = 1
 
 Bundle "davidhalter/jedi-vim"
+set completeopt=menuone,longest
+
 Bundle "tomasr/molokai"
 Bundle "joshdick/onedark.vim"
 Bundle "ctrlpvim/ctrlp.vim"
