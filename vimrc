@@ -27,6 +27,7 @@ let g:airline_powerline_fonts = 1
 
 Bundle "davidhalter/jedi-vim"
 set completeopt=menuone,longest
+let g:jedi#show_call_signatures=0
 
 Bundle "tomasr/molokai"
 Bundle "joshdick/onedark.vim"
