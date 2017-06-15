@@ -19,7 +19,6 @@ Bundle 'gmarik/Vundle.vim'
 
 Bundle "airblade/vim-gitgutter"
 Bundle "tpope/vim-fugitive"
-Bundle "mileszs/ack.vim"
 
 Bundle "vim-airline/vim-airline"
 Bundle "vim-airline/vim-airline-themes"
@@ -29,7 +28,6 @@ Bundle "davidhalter/jedi-vim"
 set completeopt=menuone,longest
 let g:jedi#show_call_signatures=0
 
-Bundle "tomasr/molokai"
 Bundle "joshdick/onedark.vim"
 Bundle "ctrlpvim/ctrlp.vim"
 Bundle "ervandew/supertab"
