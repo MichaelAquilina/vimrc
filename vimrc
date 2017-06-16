@@ -52,6 +52,8 @@ nnoremap <leader>ev :split $MYVIMRC<cr>
 nnoremap <c-b> :CtrlPBuffer<cr>
 nnoremap - ddp
 nnoremap _ ddkP
+nnoremap <leader>]  :lnext<cr>
+nnoremap <leader>[  :lprevious<cr>
 
 " Uppercasing shortcuts
 nnoremap <c-u> veU<esc>
