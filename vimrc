@@ -17,6 +17,10 @@ call vundle#begin()
 " required!
 Bundle 'gmarik/Vundle.vim'
 
+Bundle "907th/vim-auto-save"
+let g:auto_save = 1
+let g:auto_save_events = ["CursorHoldI", "CursorHold", "InsertLeave"]
+
 Bundle "airblade/vim-gitgutter"
 Bundle "tpope/vim-fugitive"
 
