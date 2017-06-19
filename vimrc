@@ -37,7 +37,6 @@ Bundle "ctrlpvim/ctrlp.vim"
 Bundle "ervandew/supertab"
 Bundle "vim-syntastic/syntastic"
 let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_always_populate_loc_list = 1
 
 call vundle#end()
 filetype plugin indent on    " required!
@@ -80,8 +79,6 @@ set list
 
 " Remove extra whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e
-" Automatically save changes when focus is lost
-autocmd FocusLost * :wa
 
 " ripgrep is much faster. Use it if its available
 if executable('rg')
