@@ -47,7 +47,7 @@ let mapleader=" "
 
 " Custom command shortcuts
 nnoremap <leader>sv :source $MYVIMRC<cr>
-nnoremap <leader>ev :split $MYVIMRC<cr>
+nnoremap <leader>ev :edit $MYVIMRC<cr>
 nnoremap <c-b> :CtrlPBuffer<cr>
 nnoremap - ddp
 nnoremap _ ddkP
