@@ -31,6 +31,8 @@ let g:airline_powerline_fonts = 1
 Bundle "davidhalter/jedi-vim"
 set completeopt=menuone,longest
 let g:jedi#show_call_signatures=0
+let g:jedi#smart_auto_mappings=0
+let g:jedi#completions_enabled=0
 
 Bundle "joshdick/onedark.vim"
 Bundle "ctrlpvim/ctrlp.vim"
