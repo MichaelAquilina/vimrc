@@ -42,6 +42,8 @@ Bundle "ctrlpvim/ctrlp.vim"
 Bundle "ervandew/supertab"
 Bundle "vim-syntastic/syntastic"
 let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 1
 
 call vundle#end()
 filetype plugin indent on    " required!
