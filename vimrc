@@ -9,6 +9,8 @@ set incsearch
 set showmatch
 set autoread
 set noswapfile
+set cursorline
+set colorcolumn=100
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
