@@ -13,37 +13,32 @@ set cursorline
 set cursorcolumn
 set colorcolumn=100
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-" Let Vundle manage Vundle
-" required!
-Bundle 'gmarik/Vundle.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
-Bundle "airblade/vim-gitgutter"
-Bundle "tpope/vim-fugitive"
-
-Bundle "vim-airline/vim-airline"
-Bundle "vim-airline/vim-airline-themes"
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 1
 
-Bundle "davidhalter/jedi-vim"
+Plug 'davidhalter/jedi-vim'
 set completeopt=menuone,longest
 let g:jedi#show_call_signatures=0
 let g:jedi#smart_auto_mappings=0
 let g:jedi#completions_enabled=0
 
-Bundle "joshdick/onedark.vim"
-Bundle "ctrlpvim/ctrlp.vim"
+Plug 'joshdick/onedark.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 let g:ctrl_working_path_mode = 'w'
 
-Bundle "ervandew/supertab"
-Bundle "vim-syntastic/syntastic"
+Plug 'ervandew/supertab'
+Plug 'vim-syntastic/syntastic'
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 
-call vundle#end()
+call plug#end()
 filetype plugin indent on    " required!
 
 colorscheme onedark
