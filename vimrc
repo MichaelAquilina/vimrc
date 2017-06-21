@@ -39,6 +39,8 @@ let g:jedi#completions_enabled=0
 
 Bundle "joshdick/onedark.vim"
 Bundle "ctrlpvim/ctrlp.vim"
+let g:ctrl_working_path_mode = 'w'
+
 Bundle "ervandew/supertab"
 Bundle "vim-syntastic/syntastic"
 let g:syntastic_python_checkers = ['flake8']
