@@ -83,7 +83,7 @@ set tabstop=4
 set shiftwidth=4
 
 " Show whitespace characters
-set listchars=eol:¬,tab:>-,trail:~,extends:>,precedes:<,space:.
+set listchars=eol:¬,tab:>-,trail:~,extends:>,precedes:<,
 set list
 
 " Remove extra whitespaces on save
