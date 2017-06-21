@@ -63,6 +63,15 @@ nnoremap <leader>[  :lprevious<cr>
 nnoremap <c-u> veU<esc>
 inoremap <c-u> <esc>lveU<esc>i
 
+" Disable Ex-mode
+nnoremap Q <nop>
+" Disable stop redraw
+nnoremap <c-s> <nop>
+" Dont insert ctrl-b into buffer
+inoremap <c-b> <nop>
+
+nnoremap <cr> i<cr>
+
 nnoremap <leader>e :Errors<cr>
 
 set t_Co=256  " Explicitly tell Vim that the terminal supports 256 colors
