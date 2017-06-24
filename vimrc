@@ -15,6 +15,7 @@ set colorcolumn=100
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'arrufat/vala.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
