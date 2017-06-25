@@ -19,6 +19,16 @@ call plug#begin('~/.vim/plugged')
 Plug 'arrufat/vala.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'neomake/neomake'
+let g:neomake_python_flake8_maker = {
+    \ 'args': ['--format=default'],
+    \ 'errorformat':
+        \ '%E%f:%l: could not compile,%-Z%p^,' .
+        \ '%A%f:%l:%c: %t%n %m,' .
+        \ '%A%f:%l: %t%n %m,' .
+        \ '%-G%.%#',
+    \ }
+let g:neomake_python_enabled_makers = ['flake8']
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
