@@ -16,6 +16,9 @@ set nofoldenable
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'maralla/completor.vim'
+let g:completor_python_binary = '/usr/bin/python3.6'
+
 Plug 'arrufat/vala.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
