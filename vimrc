@@ -27,6 +27,7 @@ Plug 'neomake/neomake' | Plug 'dojoteef/neomake-autolint'
 Plug 'maralla/completor.vim'
 let g:completor_python_binary = '/usr/bin/python3.6'
 
+Plug 'scrooloose/nerdtree'
 Plug 'arrufat/vala.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
