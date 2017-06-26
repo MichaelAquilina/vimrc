@@ -24,6 +24,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'neomake/neomake' | Plug 'dojoteef/neomake-autolint'
 
+Plug 'terryma/vim-multiple-cursors'
+
 Plug 'maralla/completor.vim'
 let g:completor_python_binary = '/usr/bin/python3.6'
 
