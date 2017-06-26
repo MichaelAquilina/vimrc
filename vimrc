@@ -22,7 +22,7 @@ set autoindent
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'neomake/neomake'
+Plug 'neomake/neomake' | Plug 'dojoteef/neomake-autolint'
 
 Plug 'maralla/completor.vim'
 let g:completor_python_binary = '/usr/bin/python3.6'
