@@ -96,6 +96,9 @@ set list
 " Remove extra whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e
 
+" Save on Focus Lost. Only supported on neovim with terminals :)
+autocmd BufLeave,FocusLost * silent! wall
+
 " ripgrep is much faster. Use it if its available
 if executable('rg')
   let g:ackprg = "rg --vimgrep --smart-case"
