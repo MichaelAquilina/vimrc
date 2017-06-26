@@ -13,6 +13,12 @@ set cursorline
 set cursorcolumn
 set colorcolumn=100
 set nofoldenable
+set expandtab
+set tabstop=4
+set shiftwidth=4
+filetype indent on
+set nowrap
+set autoindent
 
 call plug#begin('~/.vim/plugged')
 
@@ -82,13 +88,6 @@ set encoding=utf-8
 
 set hidden
 set history=100
-
-filetype indent on
-set nowrap
-set autoindent
-set expandtab
-set tabstop=4
-set shiftwidth=4
 
 " Show whitespace characters
 set listchars=eol:¬,tab:>-,trail:~,extends:>,precedes:<,
