@@ -3,6 +3,7 @@ syntax enable
 set number
 set nocompatible
 set laststatus=2
+set eol
 set mouse=a
 set hlsearch
 set incsearch
@@ -23,6 +24,7 @@ set autoindent
 call plug#begin('~/.vim/plugged')
 
 Plug 'neomake/neomake' | Plug 'dojoteef/neomake-autolint'
+let g:neomake_python_enabled_makers = ['flake8']
 
 Plug 'terryma/vim-multiple-cursors'
 
