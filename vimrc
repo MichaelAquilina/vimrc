@@ -48,7 +48,7 @@ let g:jedi#completions_enabled=0
 
 Plug 'joshdick/onedark.vim'
 Plug 'ctrlpvim/ctrlp.vim'
-let g:ctrl_working_path_mode = 'w'
+let g:ctrlp_working_path_mode = 'w'
 
 call plug#end()
 filetype plugin indent on    " required!
