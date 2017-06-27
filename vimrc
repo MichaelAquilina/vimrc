@@ -48,8 +48,6 @@ Plug 'joshdick/onedark.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 let g:ctrl_working_path_mode = 'w'
 
-Plug 'ervandew/supertab'
-
 call plug#end()
 filetype plugin indent on    " required!
 
