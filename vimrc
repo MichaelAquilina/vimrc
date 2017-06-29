@@ -84,8 +84,6 @@ nnoremap <cr> i<cr>
 
 nnoremap <esc><esc> :let @/ = ""<cr>
 
-nnoremap <leader>e :Errors<cr>
-
 set t_Co=256  " Explicitly tell Vim that the terminal supports 256 colors
 set encoding=utf-8
 
