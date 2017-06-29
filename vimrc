@@ -75,8 +75,10 @@ inoremap <c-u> <esc>lveU<esc>i
 nnoremap Q <nop>
 " Disable stop redraw
 nnoremap <c-s> <nop>
-" Dont insert ctrl-b into buffer
+
+" Dont insert odd characters into buffer by mistake
 inoremap <c-b> <nop>
+inoremap <c-s> <nop>
 
 nnoremap <cr> i<cr>
 
