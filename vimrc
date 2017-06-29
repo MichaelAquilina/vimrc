@@ -94,11 +94,14 @@ set history=100
 set listchars=eol:¬,tab:>-,trail:~,extends:>,precedes:<,
 set list
 
-" Remove extra whitespaces on save
-autocmd BufWritePre * :%s/\s\+$//e
+augroup vimrc
+    autocmd!
+    " Remove extra whitespaces on save
+    autocmd BufWritePre * :%s/\s\+$//e
 
-" Save on Focus Lost. Only supported on neovim with terminals :)
-autocmd BufLeave,FocusLost * silent! wall
+    " Save on Focus Lost. Only supported on neovim with terminals :)
+    autocmd BufLeave,FocusLost * silent! wall
+augroup END
 
 " ripgrep is much faster. Use it if its available
 if executable('rg')
