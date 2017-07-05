@@ -20,7 +20,6 @@ set shiftwidth=4
 filetype indent on
 set nowrap
 set autoindent
-set clipboard+=unnamedplus
 
 call plug#begin('~/.vim/plugged')
 
