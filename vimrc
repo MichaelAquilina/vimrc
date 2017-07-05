@@ -98,7 +98,7 @@ set list
 augroup vimrc
     autocmd!
     " Remove extra whitespaces on save
-    autocmd BufWritePre * :%s/\s\+$//e
+    autocmd InsertLeave,BufLeave,FocusLost * :%s/\s\+$//e
 
     " Save on Focus Lost. Only supported on neovim with terminals :)
     autocmd BufLeave,FocusLost * silent! wall
