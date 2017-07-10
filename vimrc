@@ -115,7 +115,7 @@ if executable('rg')
   let g:ackprg = "rg --vimgrep --smart-case"
   set grepprg="rg --vimgrep --smart-case"
   " Use rg in CtrlP for listing files. Lightning fast
-  let g:ctrlp_user_command = "rg %s --color=never --files -g '*' -g '!.git'"
+  let g:ctrlp_user_command = "rg %s --files --hidden -g '!.git' --color=never"
   " ripgrep is fast enough not to need caching
   let g:ctrlp_use_caching = 0
 endif
