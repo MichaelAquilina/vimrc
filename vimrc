@@ -1,7 +1,6 @@
 filetype off
 syntax enable
 set number
-set nocompatible
 set laststatus=2
 set eol
 set mouse=a
