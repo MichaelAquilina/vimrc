@@ -110,7 +110,7 @@ set list
 augroup vimrc
     autocmd!
     " Remove extra whitespaces on save
-    autocmd InsertLeave,BufLeave,FocusLost * :%s/\s\+$//e
+    autocmd InsertLeave,BufLeave,FocusLost * silent! :%s/\s\+$//e
 
     " Always return to Normal mode when losing Focus
     autocmd FocusLost * stopinsert | wall!
