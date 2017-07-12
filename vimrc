@@ -85,17 +85,17 @@ nnoremap <cr> i<cr>
 nnoremap <esc><esc> :let @/ = ""<cr>
 
 " Copy the relative path + row number to the clipboard
-function! RelativePath(linenumber)
+function! CopyRelativePath(linenumber)
     echom "Copied relative path to clipboard"
     if a:linenumber
-        return @% . ":" . line(".")
+        let @+ = @% . ":" . line(".")
     else
-        return @%
+        let @+ = @%
     endif
 endfunction
 
-nnoremap <leader>, :let @+ = RelativePath(0) <cr>
-nnoremap <leader>. :let @+ = RelativePath(1) <cr>
+nnoremap <leader>, :call CopyRelativePath(0) <cr>
+nnoremap <leader>. :call CopyRelativePath(1) <cr>
 
 set t_Co=256  " Explicitly tell Vim that the terminal supports 256 colors
 set encoding=utf-8
