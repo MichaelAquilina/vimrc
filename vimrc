@@ -32,6 +32,7 @@ let g:completor_python_binary = '/usr/bin/python3.6'
 
 Plug 'scrooloose/nerdtree'
 Plug 'arrufat/vala.vim'
+Plug 'keith/swift.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
