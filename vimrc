@@ -30,6 +30,8 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'maralla/completor.vim'
 let g:completor_python_binary = '/usr/bin/python3.6'
 
+Plug 'dyng/ctrlsf.vim'
+let ctrlsf_ackprg = 'rg'
 Plug 'scrooloose/nerdtree'
 Plug 'arrufat/vala.vim'
 Plug 'keith/swift.vim'
