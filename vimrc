@@ -67,7 +67,7 @@ nnoremap - ddp
 nnoremap _ ddkP
 nnoremap <leader>]  :lnext<cr>
 nnoremap <leader>[  :lprevious<cr>
-nnoremap <leader>/ :NERDTree<cr>
+nnoremap <leader>/ :NERDTreeToggle<cr>
 vnoremap <leader>c "+y
 
 " Uppercasing shortcuts
