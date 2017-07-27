@@ -87,6 +87,9 @@ nnoremap <cr> i<cr>
 
 nnoremap <esc><esc> :let @/ = ""<cr>
 
+nnoremap <c-right> w
+nnoremap <c-left> b
+
 " Copy the relative path + row number to the clipboard
 function! CopyRelativePath(linenumber)
     echom "Copied relative path to clipboard"
