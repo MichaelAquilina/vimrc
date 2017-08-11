@@ -22,13 +22,12 @@ set autoindent
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'neomake/neomake' | Plug 'dojoteef/neomake-autolint'
+Plug 'neomake/neomake'
 let g:neomake_python_enabled_makers = ['flake8']
 
 Plug 'terryma/vim-multiple-cursors'
 
-Plug 'maralla/completor.vim'
-let g:completor_python_binary = '/usr/bin/python3.6'
+"Plug 'maralla/completor.vim'
 
 Plug 'dyng/ctrlsf.vim'
 let ctrlsf_ackprg = 'rg'
@@ -115,6 +114,8 @@ set list
 
 augroup vimrc
     autocmd!
+
+    autocmd BufWritePost,BufEnter * Neomake
     " Remove extra whitespaces
     autocmd InsertLeave,BufLeave,FocusLost * silent! :%s/\s\+$//e
     " Remove extra blank lines at the end of the file
