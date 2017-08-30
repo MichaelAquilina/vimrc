@@ -27,7 +27,9 @@ let g:neomake_python_enabled_makers = ['flake8']
 
 Plug 'terryma/vim-multiple-cursors'
 
-"Plug 'maralla/completor.vim'
+Plug 'maralla/completor.vim'
+
+Plug 'pangloss/vim-javascript'
 
 Plug 'dyng/ctrlsf.vim'
 let ctrlsf_ackprg = 'rg'
