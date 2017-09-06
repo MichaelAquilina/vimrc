@@ -29,6 +29,7 @@ Plug 'terryma/vim-multiple-cursors'
 
 Plug 'maralla/completor.vim'
 
+Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
 
 Plug 'dyng/ctrlsf.vim'
