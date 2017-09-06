@@ -31,6 +31,8 @@ Plug 'maralla/completor.vim'
 
 Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
+let g:javascript_plugin_flow = 1
+Plug 'flowtype/vim-flow'
 
 Plug 'dyng/ctrlsf.vim'
 let ctrlsf_ackprg = 'rg'
