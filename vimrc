@@ -27,7 +27,8 @@ let g:neomake_python_enabled_makers = ['flake8']
 
 Plug 'terryma/vim-multiple-cursors'
 
-Plug 'maralla/completor.vim'
+Plug 'Shougo/deoplete.nvim'
+let g:deoplete#enable_at_startup = 1
 
 Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
