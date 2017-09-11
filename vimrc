@@ -133,7 +133,7 @@ augroup vimrc
     autocmd BufLeave,FocusLost * silent! wall
 augroup END
 
-" ripgrep is much faster. Use it if its available
+" ripgrep is much faster. Use it if it's available
 if executable('rg')
   let g:ackprg = "rg --vimgrep --smart-case"
   set grepprg="rg --vimgrep --smart-case"
