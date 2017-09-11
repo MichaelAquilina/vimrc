@@ -36,7 +36,6 @@ let g:javascript_plugin_flow = 1
 Plug 'flowtype/vim-flow'
 
 Plug 'dyng/ctrlsf.vim'
-let ctrlsf_ackprg = 'rg'
 Plug 'scrooloose/nerdtree'
 Plug 'arrufat/vala.vim'
 Plug 'keith/swift.vim'
@@ -138,6 +137,7 @@ augroup END
 if executable('rg')
   let g:ackprg = "rg --vimgrep --smart-case"
   set grepprg="rg --vimgrep --smart-case"
+  let ctrlsf_ackprg = 'rg'
   " Use rg in CtrlP for listing files. Lightning fast
   let g:ctrlp_user_command = "rg %s --files --hidden -g '!.git' --color=never"
   " ripgrep is fast enough not to need caching
