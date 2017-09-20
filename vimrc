@@ -96,6 +96,14 @@ nnoremap <esc><esc> :let @/ = ""<cr>
 nnoremap <c-right> w
 nnoremap <c-left> b
 
+function! GetGithubUrl()
+    let relpath = substitute(@%, getcwd() . "/" , "", "")
+    let origin = system('git remote get-url origin')
+
+    echom origin
+    echom printf("https://%s/%s/blob/%s/%s#L%s", "github.com", "lyst/lyst", "master", relpath, line("."))
+endfunction
+
 " Copy the relative path + row number to the clipboard
 function! CopyRelativePath(linenumber)
     echom "Copied relative path to clipboard"
@@ -108,6 +116,7 @@ endfunction
 
 nnoremap <leader>, :call CopyRelativePath(0) <cr>
 nnoremap <leader>. :call CopyRelativePath(1) <cr>
+nnoremap <leader>; :call GetGithubUrl() <cr>
 
 set t_Co=256  " Explicitly tell Vim that the terminal supports 256 colors
 set encoding=utf-8
