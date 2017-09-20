@@ -25,6 +25,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'neomake/neomake'
 let g:neomake_python_enabled_makers = ['flake8']
 
+Plug 'scrooloose/nerdcommenter'
+
 Plug 'terryma/vim-multiple-cursors'
 
 Plug 'Shougo/deoplete.nvim'
