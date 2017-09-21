@@ -147,13 +147,13 @@ augroup END
 
 " ripgrep is much faster. Use it if it's available
 if executable('rg')
-  let g:ackprg = "rg --vimgrep --smart-case"
-  set grepprg="rg --vimgrep --smart-case"
-  let ctrlsf_ackprg = 'rg'
-  " Use rg in CtrlP for listing files. Lightning fast
-  let g:ctrlp_user_command = "rg %s --files --hidden -g '!.git' --color=never"
-  " ripgrep is fast enough not to need caching
-  let g:ctrlp_use_caching = 0
+    let g:ackprg = "rg --vimgrep --smart-case"
+    set grepprg="rg --vimgrep --smart-case"
+    let ctrlsf_ackprg = 'rg'
+    " Use rg in CtrlP for listing files. Lightning fast
+    let g:ctrlp_user_command = "rg %s --files --hidden -g '!.git' --color=never"
+    " ripgrep is fast enough not to need caching
+    let g:ctrlp_use_caching = 0
 endif
 
 if &term =~ '256color'
