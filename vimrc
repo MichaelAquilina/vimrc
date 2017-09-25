@@ -98,10 +98,14 @@ nnoremap <c-left> b
 
 function! GetGithubUrl()
     let relpath = substitute(@%, getcwd() . "/" , "", "")
-    let origin = system('git remote get-url origin')
+    let revision = substitute(system('git rev-parse HEAD'), '\n', '', '')
+    let origin = substitute(system('git remote get-url origin'), '\n', '', '')
+    let uri = split(origin, '@')[1]
+    let tokens = split(uri, ':')
+    let domain = tokens[0]
+    let path = substitute(tokens[1], '.git', '', '')
 
-    echom origin
-    echom printf("https://%s/%s/blob/%s/%s#L%s", "github.com", "lyst/lyst", "master", relpath, line("."))
+    echom printf("https://%s/%s/blob/%s/%s#L%s", domain, path, revision, relpath, line("."))
 endfunction
 
 " Copy the relative path + row number to the clipboard
