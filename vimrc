@@ -43,6 +43,7 @@ Plug 'arrufat/vala.vim'
 Plug 'keith/swift.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -96,18 +97,6 @@ nnoremap <esc><esc> :let @/ = ""<cr>
 nnoremap <c-right> w
 nnoremap <c-left> b
 
-function! GetGithubUrl()
-    let relpath = substitute(@%, getcwd() . "/" , "", "")
-    let revision = substitute(system('git rev-parse HEAD'), '\n', '', '')
-    let origin = substitute(system('git remote get-url origin'), '\n', '', '')
-    let uri = split(origin, '@')[1]
-    let tokens = split(uri, ':')
-    let domain = tokens[0]
-    let path = substitute(tokens[1], '.git', '', '')
-
-    echom printf("https://%s/%s/blob/%s/%s#L%s", domain, path, revision, relpath, line("."))
-endfunction
-
 " Copy the relative path + row number to the clipboard
 function! CopyRelativePath(linenumber)
     echom "Copied relative path to clipboard"
@@ -120,7 +109,7 @@ endfunction
 
 nnoremap <leader>, :call CopyRelativePath(0) <cr>
 nnoremap <leader>. :call CopyRelativePath(1) <cr>
-nnoremap <leader>; :call GetGithubUrl() <cr>
+vnoremap <leader>; :Gbrowse <cr>
 
 set t_Co=256  " Explicitly tell Vim that the terminal supports 256 colors
 set encoding=utf-8
