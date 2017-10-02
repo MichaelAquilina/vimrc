@@ -29,9 +29,6 @@ Plug 'scrooloose/nerdcommenter'
 
 Plug 'terryma/vim-multiple-cursors'
 
-Plug 'Shougo/deoplete.nvim'
-let g:deoplete#enable_at_startup = 1
-
 Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
 let g:javascript_plugin_flow = 1
@@ -49,7 +46,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 1
 
+Plug 'Shougo/deoplete.nvim'
+let g:deoplete#enable_at_startup = 1
 Plug 'davidhalter/jedi-vim'
+Plug 'zchee/deoplete-jedi'
 let g:jedi#show_call_signatures=0
 let g:jedi#smart_auto_mappings=0
 let g:jedi#completions_enabled=0
