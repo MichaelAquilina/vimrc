@@ -109,8 +109,9 @@ endfunction
 
 nnoremap <leader>, :call CopyRelativePath(0) <cr>
 nnoremap <leader>. :call CopyRelativePath(1) <cr>
-vnoremap <leader>gb :Gbrowse <cr>
-nnoremap <leader>gd :Gdiff <cr>
+vnoremap <leader>fb :Gbrowse <cr>
+nnoremap <leader>fb v:Gbrowse <cr>
+nnoremap <leader>fd :Gdiff <cr>
 
 set t_Co=256  " Explicitly tell Vim that the terminal supports 256 colors
 set encoding=utf-8
