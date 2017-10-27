@@ -29,6 +29,9 @@ Plug 'scrooloose/nerdcommenter'
 
 Plug 'terryma/vim-multiple-cursors'
 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
 Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
 let g:javascript_plugin_flow = 1
@@ -55,8 +58,6 @@ let g:jedi#smart_auto_mappings=0
 let g:jedi#completions_enabled=0
 
 Plug 'joshdick/onedark.vim'
-Plug 'ctrlpvim/ctrlp.vim'
-let g:ctrlp_working_path_mode = 'w'
 
 call plug#end()
 filetype plugin indent on    " required!
@@ -69,7 +70,6 @@ let mapleader=" "
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>ev :edit $MYVIMRC<cr>
 nnoremap <leader>ez :edit ~/.zshrc<cr>
-nnoremap <c-b> :CtrlPBuffer<cr>
 nnoremap - ddp
 nnoremap _ ddkP
 nnoremap <leader>]  :lnext<cr>
@@ -80,6 +80,8 @@ vnoremap <leader>c "+y
 " Uppercasing shortcuts
 nnoremap <c-u> veU<esc>
 inoremap <c-u> <esc>lveU<esc>i
+
+nnoremap <c-p> :Files<cr>
 
 " Disable Ex-mode
 nnoremap Q <nop>
@@ -145,10 +147,6 @@ if executable('rg')
     let g:ackprg = "rg --vimgrep --smart-case"
     set grepprg="rg --vimgrep --smart-case"
     let ctrlsf_ackprg = 'rg'
-    " Use rg in CtrlP for listing files. Lightning fast
-    let g:ctrlp_user_command = "rg %s --files --hidden -g '!.git' --color=never"
-    " ripgrep is fast enough not to need caching
-    let g:ctrlp_use_caching = 0
 endif
 
 if &term =~ '256color'
