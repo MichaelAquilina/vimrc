@@ -82,6 +82,7 @@ nnoremap <c-u> veU<esc>
 inoremap <c-u> <esc>lveU<esc>i
 
 nnoremap <c-p> :Files<cr>
+nnoremap <c-b> :Buffers<cr>
 
 " Disable Ex-mode
 nnoremap Q <nop>
