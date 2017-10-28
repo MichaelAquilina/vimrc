@@ -1,3 +1,5 @@
+set encoding=utf-8
+scriptencoding utf-8
 filetype off
 syntax enable
 set number
@@ -64,7 +66,7 @@ filetype plugin indent on    " required!
 
 colorscheme onedark
 
-let mapleader=" "
+let mapleader=' '
 
 " Custom command shortcuts
 nnoremap <leader>sv :source $MYVIMRC<cr>
@@ -102,9 +104,9 @@ nnoremap <c-left> b
 
 " Copy the relative path + row number to the clipboard
 function! CopyRelativePath(linenumber)
-    echom "Copied relative path to clipboard"
+    echom 'Copied relative path to clipboard'
     if a:linenumber
-        let @+ = @% . ":" . line(".")
+        let @+ = @% . ':' . line('.')
     else
         let @+ = @%
     endif
@@ -117,7 +119,6 @@ nnoremap <leader>fb v:Gbrowse <cr>
 nnoremap <leader>fd :Gdiff <cr>
 
 set t_Co=256  " Explicitly tell Vim that the terminal supports 256 colors
-set encoding=utf-8
 
 set hidden
 set history=100
@@ -145,12 +146,11 @@ augroup END
 
 " ripgrep is much faster. Use it if it's available
 if executable('rg')
-    let g:ackprg = "rg --vimgrep --smart-case"
-    set grepprg="rg --vimgrep --smart-case"
+    let g:ackprg = 'rg --smart-case'
     let ctrlsf_ackprg = 'rg'
 endif
 
-if &term =~ '256color'
+if &term =~# '256color'
   " Disable Background Color Erase (BCE) so that color schemes
   " work properly when Vim is used inside tmux and GNU screen.
   set t_ut=
