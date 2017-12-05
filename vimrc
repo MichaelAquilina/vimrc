@@ -60,6 +60,7 @@ let g:deoplete#enable_at_startup = 1
 Plug 'davidhalter/jedi-vim'
 Plug 'zchee/deoplete-jedi'
 let g:jedi#show_call_signatures=0
+let g:jedi#max_doc_height=0
 let g:jedi#smart_auto_mappings=0
 let g:jedi#completions_enabled=0
 
