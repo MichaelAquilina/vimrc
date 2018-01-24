@@ -71,7 +71,7 @@ filetype plugin indent on    " required!
 
 colorscheme onedark
 
-let mapleader=' '
+let g:mapleader=' '
 
 " Custom command shortcuts
 nnoremap <leader>sv :source $MYVIMRC<cr>
@@ -152,7 +152,7 @@ augroup END
 " ripgrep is much faster. Use it if it's available
 if executable('rg')
     let g:ackprg = 'rg --smart-case'
-    let ctrlsf_ackprg = 'rg'
+    let g:ctrlsf_ackprg = 'rg'
 endif
 
 if &term =~# '256color'
