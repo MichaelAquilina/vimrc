@@ -4,7 +4,7 @@ filetype off
 syntax enable
 set number
 set laststatus=2
-set eol
+set endofline
 set mouse=a
 set hlsearch
 set incsearch
