@@ -25,7 +25,7 @@ set autoindent
 call plug#begin('~/.vim/plugged')
 
 Plug 'neomake/neomake'
-let g:neomake_python_enabled_makers = ['flake8']
+let g:neomake_python_enabled_makers = ['flake8', 'python', 'mypy']
 
 Plug 'scrooloose/nerdcommenter'
 
