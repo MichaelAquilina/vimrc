@@ -21,6 +21,7 @@ set shiftwidth=4
 filetype indent on
 set nowrap
 set autoindent
+set spell spelllang=en_gb
 
 call plug#begin('~/.vim/plugged')
 
