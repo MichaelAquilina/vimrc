@@ -46,6 +46,7 @@ Plug 'keith/swift.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+Plug 'Chiel92/vim-autoformat'
 
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
