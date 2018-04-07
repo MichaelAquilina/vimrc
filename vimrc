@@ -18,6 +18,7 @@ set nofoldenable
 set expandtab
 set tabstop=4
 set shiftwidth=4
+set termguicolors
 filetype indent on
 set nowrap
 set autoindent
