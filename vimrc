@@ -68,11 +68,12 @@ let g:jedi#smart_auto_mappings=0
 let g:jedi#completions_enabled=0
 
 Plug 'joshdick/onedark.vim'
+Plug 'challenger-deep-theme/vim'
 
 call plug#end()
 filetype plugin indent on    " required!
 
-colorscheme onedark
+colorscheme challenger_deep
 
 let g:mapleader=' '
 
