@@ -27,7 +27,6 @@ set spell spelllang=en_gb
 call plug#begin('~/.vim/plugged')
 
 Plug 'neomake/neomake'
-let g:neomake_python_enabled_makers = ['flake8', 'python', 'mypy']
 
 Plug 'scrooloose/nerdcommenter'
 
@@ -101,7 +100,7 @@ nnoremap Q <nop>
 " Disable stop redraw
 nnoremap <c-s> <nop>
 
-" Dont insert odd characters into buffer by mistake
+" Don't insert odd characters into buffer by mistake
 inoremap <c-b> <nop>
 inoremap <c-s> <nop>
 
