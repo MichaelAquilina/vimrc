@@ -77,6 +77,9 @@ colorscheme challenger_deep
 
 let g:mapleader=' '
 
+" Allow opening github enterprise urls
+let g:github_enterprise_urls = ['https://git.lystit.com']
+
 " Custom command shortcuts
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>ev :edit $MYVIMRC<cr>
