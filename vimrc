@@ -50,9 +50,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'Chiel92/vim-autoformat'
 
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-let g:UltiSnipsExpandTrigger='<tab>'
+Plug 'Shougo/neosnippet'
+Plug 'Shougo/neosnippet-snippets'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -91,6 +90,12 @@ nnoremap <leader>[  :lprevious<cr>
 nnoremap <leader>/ :NERDTreeToggle<cr>
 vnoremap <leader>c "+y
 
+" Plugin key-mappings.
+" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
 " Uppercasing shortcuts
 nnoremap <c-u> veU<esc>
 inoremap <c-u> <esc>lveU<esc>i
@@ -102,7 +107,6 @@ nnoremap <c-b> :Buffers<cr>
 nnoremap Q <nop>
 " Disable stop redraw
 nnoremap <c-s> <nop>
-
 " Don't insert odd characters into buffer by mistake
 inoremap <c-b> <nop>
 inoremap <c-s> <nop>
