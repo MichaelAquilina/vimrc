@@ -68,6 +68,7 @@ let g:jedi#completions_enabled=0
 
 Plug 'joshdick/onedark.vim'
 Plug 'challenger-deep-theme/vim'
+Plug 'jremmen/vim-ripgrep'
 
 call plug#end()
 filetype plugin indent on    " required!
