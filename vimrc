@@ -112,8 +112,6 @@ nnoremap <c-s> <nop>
 inoremap <c-b> <nop>
 inoremap <c-s> <nop>
 
-nnoremap <cr> i<cr>
-
 nnoremap <esc><esc> :let @/ = ""<cr>
 
 nnoremap <c-right> w
