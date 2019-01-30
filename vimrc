@@ -34,7 +34,6 @@ Plug 'terryma/vim-multiple-cursors'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'ambv/black'
 
 Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
