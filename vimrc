@@ -88,7 +88,6 @@ nnoremap _ ddkP
 nnoremap <leader>]  :lnext<cr>
 nnoremap <leader>[  :lprevious<cr>
 nnoremap <leader>/ :NERDTreeToggle<cr>
-vnoremap <leader>c "+y
 
 " Plugin key-mappings.
 " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
