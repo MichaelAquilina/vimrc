@@ -80,6 +80,7 @@ let g:mapleader=' '
 let g:github_enterprise_urls = ['https://git.lystit.com']
 
 " Custom command shortcuts
+nnoremap QQ ZZ
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>ev :edit $MYVIMRC<cr>
 nnoremap <leader>ez :edit ~/.zshrc<cr>
