@@ -30,15 +30,11 @@ Plug 'neomake/neomake'
 
 Plug 'scrooloose/nerdcommenter'
 
-Plug 'terryma/vim-multiple-cursors'
-
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
-let g:javascript_plugin_flow = 1
-Plug 'flowtype/vim-flow'
 
 Plug 'dyng/ctrlsf.vim'
 Plug 'scrooloose/nerdtree'
@@ -47,7 +43,7 @@ Plug 'keith/swift.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-Plug 'Chiel92/vim-autoformat'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
@@ -56,16 +52,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 1
 
-Plug 'Shougo/deoplete.nvim'
-let g:deoplete#enable_at_startup = 1
-Plug 'davidhalter/jedi-vim'
-Plug 'zchee/deoplete-jedi'
-let g:jedi#show_call_signatures=0
-let g:jedi#show_documentation=0
-let g:jedi#smart_auto_mappings=0
-let g:jedi#completions_enabled=0
-
-Plug 'joshdick/onedark.vim'
 Plug 'challenger-deep-theme/vim'
 Plug 'jremmen/vim-ripgrep'
 
@@ -89,6 +75,9 @@ nnoremap _ ddkP
 nnoremap <leader>]  :lnext<cr>
 nnoremap <leader>[  :lprevious<cr>
 nnoremap <leader>/ :NERDTreeToggle<cr>
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gr <Plug>(coc-references)
 
 " Plugin key-mappings.
 " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
