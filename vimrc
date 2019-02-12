@@ -64,9 +64,11 @@ nnoremap <leader>ev :edit $MYVIMRC<cr>
 nnoremap <leader>ez :edit ~/.zshrc<cr>
 nnoremap - ddp
 nnoremap _ ddkP
-nnoremap <leader>]  :lnext<cr>
-nnoremap <leader>[  :lprevious<cr>
+nnoremap <leader>]  :GitGutterNextHunk<cr>
+nnoremap <leader>[  :GitGutterPrevHunk<cr>
 nnoremap <leader>/ :NERDTreeToggle<cr>
+nnoremap <leader>+ :GitGutterLineHighlightsToggle<cr>
+nnoremap <leader>c :GitGutterUndoHunk<cr>
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gr <Plug>(coc-references)
