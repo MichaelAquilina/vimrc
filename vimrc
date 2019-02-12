@@ -27,16 +27,11 @@ set spell spelllang=en_gb
 call plug#begin('~/.vim/plugged')
 
 Plug 'neomake/neomake'
-
 Plug 'scrooloose/nerdcommenter'
-
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-
 Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
-
-Plug 'dyng/ctrlsf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'arrufat/vala.vim'
 Plug 'keith/swift.vim'
@@ -44,14 +39,11 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
-
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
-
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 1
-
 Plug 'challenger-deep-theme/vim'
 Plug 'jremmen/vim-ripgrep'
 
