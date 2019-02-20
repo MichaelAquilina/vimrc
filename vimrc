@@ -23,6 +23,8 @@ filetype indent on
 set nowrap
 set autoindent
 set spell spelllang=en_gb
+" Enables previewing what is being substituted with %s/
+set inccommand=nosplit
 
 call plug#begin('~/.vim/plugged')
 
