@@ -134,9 +134,6 @@ augroup vimrc
     " Remove extra blank lines at the end of the file
     autocmd InsertLeave,BufLeave,FocusLost * silent! :%s#\($\n\s*\)\+\%$##
 
-    " Always return to Normal mode when losing Focus
-    autocmd FocusLost * stopinsert | wall!
-
     " Save on Focus Lost
     autocmd BufLeave,FocusLost * silent! wall
 augroup END
