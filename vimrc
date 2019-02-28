@@ -31,6 +31,7 @@ Plug 'kana/vim-textobj-user'
 Plug 'bps/vim-textobj-python'
 Plug 'kana/vim-textobj-entire'
 Plug 'sgur/vim-textobj-parameter'
+Plug 'kana/vim-textobj-indent'
 
 Plug 'neomake/neomake'
 Plug 'scrooloose/nerdcommenter'
