@@ -33,6 +33,7 @@ Plug 'kana/vim-textobj-entire'
 Plug 'sgur/vim-textobj-parameter'
 Plug 'kana/vim-textobj-indent'
 
+Plug 'tpope/vim-surround'
 Plug 'neomake/neomake'
 Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
