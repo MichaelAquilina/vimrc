@@ -33,6 +33,7 @@ Plug 'kana/vim-textobj-entire'
 Plug 'sgur/vim-textobj-parameter'
 Plug 'kana/vim-textobj-indent'
 
+Plug 'christoomey/vim-system-copy'
 Plug 'tpope/vim-surround'
 Plug 'neomake/neomake'
 Plug 'scrooloose/nerdcommenter'
