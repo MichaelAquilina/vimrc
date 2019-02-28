@@ -32,6 +32,7 @@ Plug 'bps/vim-textobj-python'
 Plug 'kana/vim-textobj-entire'
 Plug 'sgur/vim-textobj-parameter'
 Plug 'kana/vim-textobj-indent'
+Plug 'kana/vim-textobj-line'
 
 Plug 'christoomey/vim-system-copy'
 Plug 'tpope/vim-surround'
