@@ -144,6 +144,9 @@ augroup vimrc
     " Remove extra blank lines at the end of the file
     autocmd InsertLeave,BufLeave,FocusLost * silent! :%s#\($\n\s*\)\+\%$##
 
+    " Autoreload on external changes
+    autocmd BufEnter,FocusGained * :checktime
+
     " Save on Focus Lost
     autocmd BufLeave,FocusLost * silent! wall
 augroup END
