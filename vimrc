@@ -136,6 +136,12 @@ set history=100
 set listchars=eol:¬,tab:>-,trail:~,extends:>,precedes:<,
 set list
 
+" Enable word wrapping in text files
+augroup WrapLineInMarkdownFile
+    autocmd!
+    autocmd FileType markdown setlocal wrap lbr
+augroup END
+
 augroup vimrc
     autocmd!
 
