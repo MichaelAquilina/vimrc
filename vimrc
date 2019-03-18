@@ -69,16 +69,22 @@ let g:mapleader=' '
 " Allow opening github enterprise urls
 let g:github_enterprise_urls = ['https://git.lystit.com']
 
-" Custom command shortcuts
-nnoremap QQ ZZ
+" Shortcuts for editing commonly used configs
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>ev :edit $MYVIMRC<cr>
 nnoremap <leader>ez :edit ~/.zshrc<cr>
+nnoremap <leader>ei :edit ~/.config/i3/config<cr>
+nnoremap <leader>ep :edit ~/.config/polybar/config<cr>
+
+" Quickly move lines up and down
 nnoremap - ddp
 nnoremap _ ddkP
+
+" NerdTree Shortcuts
+nnoremap <leader>/ :NERDTreeToggle<cr>
+
 nnoremap <leader>]  :GitGutterNextHunk<cr>
 nnoremap <leader>[  :GitGutterPrevHunk<cr>
-nnoremap <leader>/ :NERDTreeToggle<cr>
 nnoremap <leader>+ :GitGutterLineHighlightsToggle<cr>
 nnoremap <leader>c :GitGutterUndoHunk<cr>
 
@@ -100,8 +106,10 @@ nnoremap <c-b> :Buffers<cr>
 
 " Disable Ex-mode
 nnoremap Q <nop>
+
 " Disable stop redraw
 nnoremap <c-s> <nop>
+
 " Don't insert odd characters into buffer by mistake
 inoremap <c-b> <nop>
 inoremap <c-s> <nop>
@@ -113,10 +121,11 @@ nnoremap <c-left> b
 
 " Copy the relative path + row number to the clipboard
 function! CopyRelativePath(linenumber)
-    echom 'Copied relative path to clipboard'
     if a:linenumber
+        echom 'Copied relative path to clipboard (with line number)'
         let @+ = @% . ':' . line('.')
     else
+        echom 'Copied relative path to clipboard'
         let @+ = @%
     endif
 endfunction
