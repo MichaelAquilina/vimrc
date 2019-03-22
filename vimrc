@@ -57,7 +57,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 1
 Plug 'challenger-deep-theme/vim'
-Plug 'jremmen/vim-ripgrep'
 
 call plug#end()
 filetype plugin indent on    " required!
