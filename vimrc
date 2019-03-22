@@ -42,7 +42,6 @@ Plug 'neomake/neomake'
 Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-let g:fzf_command_prefix = 'Fzf'
 Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdtree'
@@ -103,10 +102,9 @@ nnoremap <c-u> veU<esc>
 inoremap <c-u> <esc>lveU<esc>i
 
 " FZF bindings
-nnoremap <c-p> :FzfFiles<cr>
-nnoremap <c-b> :FzfBuffers<cr>
-nnoremap <c-h> :FzfBCommits<cr>
-nnoremap <c-f> :FzfRg<cr>
+nnoremap <c-p> :Files<cr>
+nnoremap <c-b> :Buffers<cr>
+nnoremap <c-h> :BCommits<cr>
 
 " Disable Ex-mode
 nnoremap Q <nop>
@@ -171,12 +169,6 @@ augroup vimrc
     " Save on Focus Lost
     autocmd BufLeave,FocusLost * silent! wall
 augroup END
-
-" ripgrep is much faster. Use it if it's available
-if executable('rg')
-    let g:ackprg = 'rg --smart-case'
-    let g:ctrlsf_ackprg = 'rg'
-endif
 
 if &term =~# '256color'
   " Disable Background Color Erase (BCE) so that color schemes
