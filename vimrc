@@ -42,6 +42,7 @@ Plug 'neomake/neomake'
 Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+let g:fzf_command_prefix = 'Fzf'
 Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdtree'
@@ -101,8 +102,11 @@ xmap <C-k>     <Plug>(neosnippet_expand_target)
 nnoremap <c-u> veU<esc>
 inoremap <c-u> <esc>lveU<esc>i
 
-nnoremap <c-p> :Files<cr>
-nnoremap <c-b> :Buffers<cr>
+" FZF bindings
+nnoremap <c-p> :FzfFiles<cr>
+nnoremap <c-b> :FzfBuffers<cr>
+nnoremap <c-h> :FzfBCommits<cr>
+nnoremap <c-f> :FzfRg<cr>
 
 " Disable Ex-mode
 nnoremap Q <nop>
