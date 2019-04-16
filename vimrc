@@ -1,30 +1,34 @@
-set encoding=utf-8
-scriptencoding utf-8
-filetype off
-syntax enable
-set number
-set laststatus=2
-set endofline
-set mouse=a
-set hlsearch
-set incsearch
-set showmatch
-set autoread
-set noswapfile
-set cursorline
-set cursorcolumn
-set colorcolumn=100
-set nofoldenable
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set termguicolors
 filetype indent on
-set nowrap
+filetype off
+scriptencoding utf-8
 set autoindent
+set autoread
+set colorcolumn=100
+set cursorcolumn
+set cursorline
+set encoding=utf-8
+set endofline
+set expandtab
+set hidden
+set history=100
+set hlsearch
+set inccommand=nosplit " Enables previewing what is being substituted with %s/
+set incsearch
+set laststatus=2
+set list
+set listchars=eol:¬,tab:>-,trail:~,extends:>,precedes:<, " Show whitespace characters
+set mouse=a
+set nofoldenable
+set noswapfile
+set nowrap
+set number
+set shiftwidth=4
+set showmatch
 set spell spelllang=en_gb
-" Enables previewing what is being substituted with %s/
-set inccommand=nosplit
+set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
+set tabstop=4
+set termguicolors
+syntax enable
 
 call plug#begin('~/.vim/plugged')
 
@@ -89,10 +93,6 @@ imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 xmap <C-k>     <Plug>(neosnippet_expand_target)
 
-" Uppercasing shortcuts
-nnoremap <c-u> veU<esc>
-inoremap <c-u> <esc>lveU<esc>i
-
 " FZF bindings
 nnoremap <c-p> :Files<cr>
 nnoremap <c-b> :Buffers<cr>
@@ -129,15 +129,6 @@ nnoremap <leader>. :call CopyRelativePath(1) <cr>
 vnoremap <leader>gb :Gbrowse <cr>
 nnoremap <leader>gb v:Gbrowse <cr>
 nnoremap <leader>gd :Gdiff <cr>
-
-set t_Co=256  " Explicitly tell Vim that the terminal supports 256 colors
-
-set hidden
-set history=100
-
-" Show whitespace characters
-set listchars=eol:¬,tab:>-,trail:~,extends:>,precedes:<,
-set list
 
 " Enable word wrapping in text files
 augroup WrapLineInMarkdownFile
