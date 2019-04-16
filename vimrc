@@ -41,12 +41,12 @@ Plug 'tpope/vim-surround'
 Plug 'neomake/neomake'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot' " Add syntax highlighting for all popular languages
 Plug 'scrooloose/nerdtree'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'airblade/vim-gitgutter' " Shows git changes near line numbers
+Plug 'tpope/vim-fugitive' " Add git commands within vim
+Plug 'tpope/vim-rhubarb' " Browse code in github
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}  " language server
 Plug 'Shougo/neosnippet'
 Plug 'MichaelAquilina/neosnippet-snippets'
 Plug 'challenger-deep-theme/vim'
