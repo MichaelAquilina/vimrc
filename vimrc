@@ -151,9 +151,9 @@ augroup vimrc
     call neomake#configure#automake('nw')
 
     " Remove extra whitespaces
-    autocmd InsertLeave,BufLeave,FocusLost * silent! :%s/\s\+$//e
+    autocmd BufWritePre,BufLeave,FocusLost * silent! :%s/\s\+$//e
     " Remove extra blank lines at the end of the file
-    autocmd InsertLeave,BufLeave,FocusLost * silent! :%s#\($\n\s*\)\+\%$##
+    autocmd BufWritePre,BufLeave,FocusLost * silent! :%s#\($\n\s*\)\+\%$##
 
     " Autoreload on external changes
     autocmd BufEnter,FocusGained * :checktime
