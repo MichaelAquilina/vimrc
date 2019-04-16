@@ -1,12 +1,14 @@
+" Set encoding before setting script encoding
+set encoding=utf-8
+scriptencoding utf-8
+
 filetype indent on
 filetype off
-scriptencoding utf-8
 set autoindent
 set autoread
 set colorcolumn=100
 set cursorcolumn
 set cursorline
-set encoding=utf-8
 set endofline
 set expandtab
 set hidden
