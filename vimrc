@@ -67,9 +67,8 @@ let g:mapleader=' '
 " Setup status line
 set laststatus=2
 set statusline=
-set statusline+=%{StatuslineMode()}
-set statusline+=%=
 set statusline+=%f
+set statusline+=%=
 set statusline+=\ %y
 set statusline+=\ %{b:gitbranch}
 
