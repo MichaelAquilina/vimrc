@@ -119,7 +119,7 @@ nnoremap <leader>ev :edit $MYVIMRC<cr>
 nnoremap <leader>ez :edit ~/.zshrc<cr>
 nnoremap <leader>ei :edit ~/.config/i3/config<cr>
 nnoremap <leader>es :edit ~/.config/sway/config<cr>
-nnoremap <leader>ep :edit ~/.config/polybar/config<cr>
+nnoremap <leader>ew :edit ~/.config/waybar/config<cr>
 
 " Quickly move lines up and down
 nnoremap - ddp
