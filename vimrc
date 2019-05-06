@@ -203,6 +203,13 @@ augroup vimrc
     autocmd BufLeave,FocusLost * silent! wall
 augroup END
 
+" Use correct copy/paste command if in wayland
+" Should probably push this change upstream
+if !empty($WAYLAND_DISPLAY)
+    let g:system_copy#copy_command='wl-copy'
+    let g:system_copy#paste_command='wl-paste'
+endif
+
 if &term =~# '256color'
   " Disable Background Color Erase (BCE) so that color schemes
   " work properly when Vim is used inside tmux and GNU screen.
