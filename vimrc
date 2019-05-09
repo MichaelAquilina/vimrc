@@ -120,6 +120,7 @@ nnoremap <leader>ez :edit ~/.zshrc<cr>
 nnoremap <leader>ei :edit ~/.config/i3/config<cr>
 nnoremap <leader>es :edit ~/.config/sway/config<cr>
 nnoremap <leader>ew :edit ~/.config/waybar/config<cr>
+nnoremap <leader>em :edit ~/.config/mako/config<cr>
 
 " Quickly move lines up and down
 nnoremap - ddp
