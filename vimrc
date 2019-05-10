@@ -56,6 +56,7 @@ Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}  " langua
 Plug 'Shougo/neosnippet'
 Plug 'MichaelAquilina/neosnippet-snippets'
 Plug 'challenger-deep-theme/vim'
+Plug 'skammer/vim-css-color'
 
 call plug#end()
 filetype plugin indent on    " required!
