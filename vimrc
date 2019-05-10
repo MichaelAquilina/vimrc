@@ -144,6 +144,7 @@ smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 xmap <C-k>     <Plug>(neosnippet_expand_target)
 
 " FZF bindings
+nnoremap <c-L> :History:<cr>
 nnoremap <c-p> :Files<cr>
 nnoremap <c-b> :Buffers<cr>
 nnoremap <c-h> :BCommits<cr>
