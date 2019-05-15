@@ -150,7 +150,6 @@ nnoremap <c-L> :History:<cr>
 nnoremap <c-p> :Files<cr>
 nnoremap <c-b> :Buffers<cr>
 nnoremap <c-h> :BCommits<cr>
-nnoremap <c-i> :History:<cr>
 let g:fzf_commits_log_options = '--color=always --format="%C(auto)%h %C(green)%an %C(auto)%s %C(black)%C(bold)%cr"'
 
 " Disable Ex-mode
