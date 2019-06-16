@@ -46,7 +46,6 @@ Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-line'
 
 Plug 'christoomey/vim-system-copy'
-Plug 'tpope/vim-surround'
 Plug 'neomake/neomake'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -55,6 +54,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter' " Shows git changes near line numbers
 Plug 'tpope/vim-fugitive' " Add git commands within vim
 Plug 'tpope/vim-rhubarb' " Browse code in github
+Plug 'tpope/vim-repeat' " Allow plugin commands to be repeatable
+Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}  " language server
 Plug 'Shougo/neosnippet'
 Plug 'MichaelAquilina/neosnippet-snippets'
