@@ -56,6 +56,7 @@ Plug 'tpope/vim-fugitive' " Add git commands within vim
 Plug 'tpope/vim-rhubarb' " Browse code in github
 Plug 'tpope/vim-repeat' " Allow plugin commands to be repeatable
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}  " language server
 Plug 'Shougo/neosnippet'
 Plug 'MichaelAquilina/neosnippet-snippets'
