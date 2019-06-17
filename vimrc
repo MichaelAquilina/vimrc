@@ -65,8 +65,9 @@ Plug 'skammer/vim-css-color'
 
 call plug#end()
 filetype plugin indent on    " required!
-
-runtime 'ftplugin/man.vim'  " enable hyperlinks in man pages
+"
+" enable hyperlinks in man pages
+runtime 'ftplugin/man.vim'
 
 colorscheme challenger_deep
 
