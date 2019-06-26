@@ -62,7 +62,6 @@ Plug 'Shougo/neosnippet'
 Plug 'MichaelAquilina/neosnippet-snippets'
 Plug 'challenger-deep-theme/vim'
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'skammer/vim-css-color'
 
 call plug#end()
 filetype plugin indent on    " required!
