@@ -54,7 +54,7 @@ Plug 'tpope/vim-markdown'
 " Disable markdown in polyglot to use vim-markdown and enable code block
 " highlighting
 let g:polyglot_disabled = ['md', 'markdown']
-let g:markdown_fenced_languages = ['python']
+let g:markdown_fenced_languages = ['python', 'html', 'css', 'scss', 'sql', 'javascript', 'go', 'python', 'bash=sh', 'c', 'ruby']
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter' " Shows git changes near line numbers
 Plug 'tpope/vim-fugitive' " Add git commands within vim
