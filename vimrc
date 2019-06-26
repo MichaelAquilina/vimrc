@@ -50,6 +50,11 @@ Plug 'neomake/neomake'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot' " Add syntax highlighting for all popular languages
+Plug 'tpope/vim-markdown'
+" Disable markdown in polyglot to use vim-markdown and enable code block
+" highlighting
+let g:polyglot_disabled = ['md', 'markdown']
+let g:markdown_fenced_languages = ['python']
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter' " Shows git changes near line numbers
 Plug 'tpope/vim-fugitive' " Add git commands within vim
