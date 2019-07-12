@@ -39,7 +39,7 @@ call plug#begin('~/.vim/plugged')
 
 " Text objects
 Plug 'kana/vim-textobj-user'
-Plug 'bps/vim-textobj-python'
+Plug 'jeetsukumaran/vim-pythonsense'
 Plug 'kana/vim-textobj-entire'
 Plug 'sgur/vim-textobj-parameter'
 Plug 'kana/vim-textobj-indent'
